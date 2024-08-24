@@ -1,10 +1,11 @@
-import { GlobalStyles } from "./assets/styles/GobalStyles"
+import { Login } from "./components/login/Login"
+import { GlobalStyles } from "./styles/GobalStyles"
 
 function App() {
 
   return (
     <>
-      <h1>Ola mundo</h1>
+      <Login />
       <GlobalStyles />
     </>
   )
