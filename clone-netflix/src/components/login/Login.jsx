@@ -1,5 +1,6 @@
 import * as S from './style.js'
 import logo from '../../assets/logo.png'
+import { FormLogin } from '../formLogin/FormLogin.jsx'
 
 export function Login() {
     return(
@@ -10,6 +11,7 @@ export function Login() {
                 </S.NavBar>
             </S.Header>
             <S.DivMain>
+                <FormLogin />
             </S.DivMain>
             <S.footer />
         </>

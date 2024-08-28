@@ -20,10 +20,13 @@ export const BranNav = styled.img`
 
 export const DivMain = styled.main`
     background-image: url(${ fundo });
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     height: 100vh;
+    padding-top: 7rem;
 ` 
 
 export const footer = styled.footer`
