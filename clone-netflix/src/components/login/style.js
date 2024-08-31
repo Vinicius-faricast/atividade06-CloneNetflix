@@ -33,7 +33,7 @@ export const footer = styled.footer`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 15rem 0 5rem 0;
+    padding: 15rem 1rem 5rem 1rem;
     max-width: 980px;
     margin: 0 auto;
 

@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 export const Main = styled.main`
     display: flex;
-    width: 980px;
+    width: 90%;
     height: 100vh;
     flex-direction: column;
     margin: 0 auto;
@@ -12,10 +12,12 @@ export const Main = styled.main`
 
 export const MainContainer = styled.div`
     display: flex;
+    max-width: 90%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1.3rem;
+    margin: 0 auto;
 
     h1{
     font-size: 4rem;
@@ -25,6 +27,9 @@ export const MainContainer = styled.div`
     div{
         display: flex;
         gap: 1.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     button{

@@ -1,6 +1,6 @@
-import * as S from './style.js'
-import logo from '../../assets/logo.png'
-import { FormLogin } from '../formLogin/FormLogin.jsx'
+import * as S from './style.js';
+import logo from '../../assets/logo.png';
+import { FormLogin } from '../formLogin/FormLogin.jsx';
 
 export function Login() {
     return(
