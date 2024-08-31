@@ -60,9 +60,11 @@ export const FormTittle = styled.h1`
 `;
 
 export const InputUser = styled.input`
+    color: white;
 `;
 
 export const InputPassword = styled.input`
+    color: white;
 `;
 
 export const ButttonEnter = styled.button`
@@ -88,17 +90,18 @@ export const ButtonCondeEnter = styled.button`
 export const CheckedInput = styled.div`
     display: flex;
     gap: 1rem;
-    
+        
     input{
         cursor: pointer;
         padding: 1rem;
         width: 2rem;
-        border-style: none;
+        /* border-style: none; */
         /* opacity: 0; */
-        background-color: #eee;
+        background: black;
         /* border-radius: .2rem; */
         /* background: none; */
         /* border: .1rem solid rgba(350, 350, 350, 0.3); */
+
     }
 
     label{

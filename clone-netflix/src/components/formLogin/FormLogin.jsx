@@ -1,13 +1,25 @@
+import { useState } from 'react';
 import * as S from './style';
 
 export function FormLogin() {
+    const [value, setValue] = useState({});
+
+    const eventSubmit = (e) => {
+        e.preventDefault()
+        setValue({
+            nome: e.target.nome.value,
+            password: e.target.password.value
+        })
+    }
+
+    console.log(value)
     return(
         <>
             <S.FormContainer>
-                <S.FormLogin>
+                <S.FormLogin onSubmit={(e) => eventSubmit(e)}>
                     <S.FormTittle>Entrar</S.FormTittle>
-                    <S.InputUser placeholder='Email ou número do celular' type='text'/>
-                    <S.InputPassword placeholder='Senha' type='password'/>
+                    <S.InputUser name='nome' placeholder='Email ou número do celular' type='text'/>
+                    <S.InputPassword name='password' placeholder='Senha' type='password'/>
                     <S.ButttonEnter>Entrar</S.ButttonEnter>
                     <p>Ou</p>
                     <S.ButtonCondeEnter>Usar código de acesso</S.ButtonCondeEnter>

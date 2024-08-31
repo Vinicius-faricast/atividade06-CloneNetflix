@@ -30,6 +30,44 @@ export const DivMain = styled.main`
 ` 
 
 export const footer = styled.footer`
-    height: 300px;
-    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 15rem 0 5rem 0;
+    max-width: 980px;
+    margin: 0 auto;
+
+    p, li{
+        font-weight: 400;
+        font-size: .9rem;
+        list-style: none;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+
+    a{
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    select{
+        width: 7rem;
+        padding: .5rem;
+        background-color: transparent;
+        color: white;
+        border: .1rem solid whitesmoke;
+        border-radius: .3rem;
+    }
+
+    option{
+        color: black;
+    }
+
+
 `
