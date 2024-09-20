@@ -6,7 +6,6 @@ import { useContext } from "react";
 
 export function User() {
     const { isAuthentication} = useContext(AuthContext);
-    console.log(isAuthentication)
     return (
         <S.Main>
             <S.MainContainer>
