@@ -106,7 +106,19 @@ export const SearchContainer = styled.div`
 export const mainContainer = styled.main`
     margin-top: 4rem;
     border: 1px solid green;
+    gap: 1rem;
     height: 20rem;
+    overflow: hidden;
+`;
+
+export const ArticleContainer = styled.div`
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
 `;
 
 export const footerContainer = styled.footer`

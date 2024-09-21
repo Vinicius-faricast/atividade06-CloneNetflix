@@ -48,7 +48,6 @@ export function Catalog() {
         }
 
         getData();
-        
     }, [])
 
     return (
@@ -81,12 +80,14 @@ export function Catalog() {
             </S.Header>
             <S.mainContainer>
                 <h1>ola</h1>
-                {listPopularMovie.map(({ id, backdrop_path }, index) => (
+                <S.ArticleContainer>
+                    {listPopularMovie.map(({ id, backdrop_path }, index) => (
 
-                    <Card key={index} pathImg={backdrop_path} id={id}>
-                    </Card>
-                )
-                )}
+                        <Card key={index} pathImg={backdrop_path} id={id}>
+                        </Card>
+                    )
+                    )}
+                </S.ArticleContainer>
             </S.mainContainer>
             <S.footerContainer>
                 <S.SocialMediaContainer>
